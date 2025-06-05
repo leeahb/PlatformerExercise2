@@ -1,0 +1,10 @@
+{
+	"name": "ScoreText2",
+	"plugin-id": "Text",
+	"sid": 732249037740423,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

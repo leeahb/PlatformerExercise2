@@ -1,0 +1,627 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Score2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Increments when a coin is collected",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 172352037267140
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "User Controls2",
+			"description": "Animation Controls",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 312346392497035,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "Dude",
+							"sid": 760023184079185,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Dude",
+							"sid": 133854558771202,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Dude",
+							"sid": 649812987276744,
+							"parameters": {
+								"animation": "\"Run\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Dude",
+							"sid": 456847983332948,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"Right\""
+							}
+						}
+					],
+					"sid": 647440574085284
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 232907090069494,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "is-on-floor",
+							"objectClass": "Dude",
+							"sid": 455755781193013,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Dude",
+							"sid": 827104518699174,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Dude",
+							"sid": 255053208864584,
+							"parameters": {
+								"animation": "\"Run\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Dude",
+							"sid": 426243977127446,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"Left\""
+							}
+						}
+					],
+					"sid": 268757865868403
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "Dude",
+							"sid": 997982829280415,
+							"behaviorType": "Platform"
+						},
+						{
+							"id": "is-moving",
+							"objectClass": "Dude",
+							"sid": 622508046138563,
+							"behaviorType": "Platform",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Dude",
+							"sid": 998958875536941,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 678297698382341
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 599466284599258,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Dude",
+							"sid": 296886025494859,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "450"
+							}
+						}
+					],
+					"sid": 560403184407819
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 106540488873856
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Dude",
+							"sid": 808879957669930,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "330"
+							}
+						}
+					],
+					"sid": 141685942558423
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 641039680114218
+						}
+					],
+					"actions": [],
+					"sid": 867402226724872,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 991843932056918,
+									"parameters": {
+										"first-value": "Dude.Platform.MaxSpeed",
+										"comparison": 4,
+										"second-value": "330"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-jump-strength",
+									"objectClass": "Dude",
+									"sid": 314608474339637,
+									"behaviorType": "Platform",
+									"parameters": {
+										"jump-strength": "850"
+									}
+								}
+							],
+							"sid": 809884106673966
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 616887421063537
+						}
+					],
+					"actions": [
+						{
+							"id": "set-jump-strength",
+							"objectClass": "Dude",
+							"sid": 908649138979565,
+							"behaviorType": "Platform",
+							"parameters": {
+								"jump-strength": "650"
+							}
+						}
+					],
+					"sid": 270161956677086
+				}
+			],
+			"sid": 513190287576305
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Enemy",
+					"sid": 172822349677372,
+					"parameters": {
+						"instance-variable": "direction",
+						"comparison": 0,
+						"value": "\"Right\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Enemy",
+					"sid": 445927467861347,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "right"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Enemy",
+					"sid": 710833469315862,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 922207329640202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Enemy",
+					"sid": 437943714406535,
+					"parameters": {
+						"instance-variable": "direction",
+						"comparison": 0,
+						"value": "\"Left\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Enemy",
+					"sid": 753948124710710,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "Enemy",
+					"sid": 359315818999821,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 314485211383520
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 248293212674261,
+					"parameters": {
+						"object": "EnemyBarrier"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 867125879100651,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy",
+							"sid": 859140785602335,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"Right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy",
+							"sid": 509057058897640,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"Left\""
+							}
+						}
+					],
+					"sid": 636121814322199
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 564476210576987
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemy",
+							"sid": 851066984998470,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"Right\""
+							}
+						}
+					],
+					"sid": 688611155060515
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Dude",
+					"sid": 178346597733568,
+					"parameters": {
+						"object": "Enemy"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 978147761346361,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-falling",
+							"objectClass": "Dude",
+							"sid": 640982403870830,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemy",
+							"sid": 750736015741769,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Enemy",
+							"sid": 392152535484738,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy",
+							"sid": 306785716480416,
+							"parameters": {
+								"animation": "\"Hurt\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Enemy",
+							"sid": 396527085852027,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Dude",
+							"sid": 829145768383375,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "-650"
+							}
+						}
+					],
+					"sid": 603889726425454
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Dude",
+					"sid": 723045097030932,
+					"parameters": {
+						"object": "Trigger_break"
+					}
+				},
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "tile2",
+					"sid": 401080364692723,
+					"parameters": {
+						"which": "nearest",
+						"x": "Dude.X",
+						"y": "Dude.Y"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dude",
+					"sid": 569876650648016,
+					"parameters": {
+						"animation": "\"Hurt\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "tile2",
+					"sid": 518371523875496,
+					"parameters": {
+						"object": "particleBlock",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "particleBlock",
+					"sid": 171687242829093,
+					"parameters": {
+						"angle": "270"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "tile2",
+					"sid": 849848513609309
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Trigger_break",
+					"sid": 319731638012981
+				}
+			],
+			"sid": 910650956481319
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Dude",
+					"sid": 530099197355344,
+					"parameters": {
+						"object": "BonusBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "BonusBox",
+					"sid": 629832528063653,
+					"parameters": {
+						"object": "coin",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "BonusBox",
+					"sid": 704515353254853,
+					"parameters": {
+						"animation": "\"Used\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "BonusBox",
+					"sid": 327260564520120,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "BonusBox",
+					"sid": 445820154783725,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 262309870973156
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Dude",
+					"sid": 272241638534227,
+					"parameters": {
+						"object": "coin"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 954034651672289,
+					"parameters": {
+						"variable": "Score2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText1",
+					"sid": 516059458527441,
+					"parameters": {
+						"text": "\"Score: 15/\"&Score2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "coin",
+					"sid": 618004478836842
+				}
+			],
+			"sid": 685767606774842
+		}
+	],
+	"sid": 617554560008262
+}

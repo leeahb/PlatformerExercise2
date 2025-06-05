@@ -1,0 +1,103 @@
+{
+	"name": "BonusBox1",
+	"plugin-id": "Sprite",
+	"sid": 723070896895611,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 646172246235288
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8034329,
+						"collisionPoly": {
+							"points": [
+								0.053819444444444454,
+								0.05381944444444446,
+								0.9444444444444444,
+								0.05729166666666668,
+								0.942708333333333,
+								0.940972222222222,
+								0.055555555555555566,
+								0.9392361111111104
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 195649494043625,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3471619,
+						"collisionPoly": {
+							"points": [
+								0.15625,
+								0.0625,
+								0.84375,
+								0.0625,
+								0.9375,
+								0.15625,
+								0.9375,
+								0.84375,
+								0.84375,
+								0.9375,
+								0.15625,
+								0.9375,
+								0.0625,
+								0.84375,
+								0.0625,
+								0.15625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 540725104949973,
+				"name": "Used",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

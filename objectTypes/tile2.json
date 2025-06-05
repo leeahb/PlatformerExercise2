@@ -1,0 +1,58 @@
+{
+	"name": "tile2",
+	"plugin-id": "Sprite",
+	"sid": 408533651923345,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 334150369917370
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4139737,
+						"collisionPoly": {
+							"points": [
+								0.027450980392156855,
+								0.035729847494553366,
+								0.9647058823529414,
+								0.029847494553376906,
+								0.9627450980392159,
+								0.9627450980392159,
+								0.033333333333333395,
+								0.9666666666666668
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 599792714349540,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

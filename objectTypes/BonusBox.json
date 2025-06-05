@@ -1,0 +1,116 @@
+{
+	"name": "BonusBox",
+	"plugin-id": "Sprite",
+	"sid": 588943438001208,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 500726532435154
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9283924,
+						"collisionPoly": {
+							"points": [
+								0.060546875,
+								0.064453125,
+								0.841796875,
+								0.05859375,
+								0.9375,
+								0.15755208333333331,
+								0.935546875,
+								0.84765625,
+								0.837890625,
+								0.9375,
+								0.15342881944444442,
+								0.9375,
+								0.064453125,
+								0.84375
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0,
+								"y": -0.9375
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 387891972375697,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4614924,
+						"collisionPoly": {
+							"points": [
+								0.15625,
+								0.0625,
+								0.84375,
+								0.0625,
+								0.9375,
+								0.15625,
+								0.9375,
+								0.84375,
+								0.84375,
+								0.9375,
+								0.15625,
+								0.9375,
+								0.0625,
+								0.84375,
+								0.0625,
+								0.15625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 876077699922098,
+				"name": "Used",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

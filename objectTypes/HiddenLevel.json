@@ -1,0 +1,58 @@
+{
+	"name": "HiddenLevel",
+	"plugin-id": "Sprite",
+	"sid": 498469682003838,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8144516,
+						"collisionPoly": {
+							"points": [
+								0.060546875,
+								0.0546875,
+								0.865234375,
+								0.060546875,
+								0.935546875,
+								0.123046875,
+								0.9375,
+								0.55859375,
+								0.697265625,
+								0.935546875,
+								0.4296875,
+								0.939453125,
+								0.05859375,
+								0.625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 484897642979485,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
